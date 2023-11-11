@@ -22,8 +22,8 @@ coulomb_to_charge_units = int(10.0e12)  # 1 Coulomb = 10.0E+12 charge units
 mAh_to_charge_units = 3.6 * (10.0e12)  # 1 mAh = 3.6*(10*(10^13)) charge units
 present_charge_in_supercapacitor = 0  # Present charge in Supercapacitor in terms of Charge units
 max_charge_in_supercapacitor = 500 * (10.0e12) * (1e-6)  # Maximum Charge that Supercapacitor can hold (Assumed Value)
-rate_at_which_supercapacitor_is_charged = 500000  # Supercapacitor charging rate (Assumed Value)
-# rate_at_which_supercapacitor_is_charged = int(os.environ['ARG_FROM_PARENT'])  # Supercapacitor charging rate (Assumed Value)
+# rate_at_which_supercapacitor_is_charged = 500000  # Supercapacitor charging rate (Assumed Value)
+rate_at_which_supercapacitor_is_charged = int(os.environ['ARG_FROM_PARENT'])  # Supercapacitor charging rate (Assumed Value)
 pa_by_battery = 0  # Counter to hold the number of times supercapacitor is not available to pace atrium
 pv_by_battery = 0  # Counter to hold the number of times supercapacitor is not available to pace ventrium
 # SOHAN
